@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#3B2F9E">
+
+  <!-- ================================================================
+       EDIT THESE 6 LINES so link previews (LinkedIn, iMessage, Slack,
+       WhatsApp) show her name. Replace YOUR-USERNAME and YOUR-REPO.
+       ================================================================ -->
+  <title>Sophie Carter | The Marketing Game</title>
+  <meta name="description" content="Sophie Carter is a brand and growth marketer in Sydney. Roll the die to explore her campaigns, results and story.">
+  <meta property="og:title" content="Sophie Carter | The Marketing Game">
+  <meta property="og:description" content="A marketing portfolio you can play. Roll the die, land on the work.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO/">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/assets/og-image.png">
+  <!-- ================================================================ -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preload" href="assets/fonts/shrikhand-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/gabarito-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-mode="play">
+  <a class="skip-link" href="#read" data-view="read">Skip to the portfolio</a>
+
+  <header class="hud" id="hud"></header>
+
+  <main id="main">
+    <section class="stage" id="stage" aria-label="The board game">
+      <div class="lid-wrap" id="lid"></div>
+      <div class="table" id="table">
+        <aside class="panel panel--player" id="panel-player" aria-label="Player card"></aside>
+        <div class="board-wrap">
+          <div class="board" id="board"></div>
+        </div>
+        <aside class="panel panel--progress" id="panel-progress" aria-label="Progress"></aside>
+      </div>
+    </section>
+
+    <section class="read" id="portfolio" hidden aria-label="Portfolio"></section>
+  </main>
+
+  <dialog class="card" id="card" aria-labelledby="card-title"></dialog>
+  <div class="toasts" id="toasts" popover="manual" aria-live="polite"></div>
+  <canvas class="confetti" id="confetti" popover="manual" aria-hidden="true"></canvas>
+  <aside class="sticky-note" id="sample-note" hidden></aside>
+  <div class="sr-only" id="announcer" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">
+      <p>This portfolio is an interactive board game and needs JavaScript. Please turn it on, or open the page in another browser.</p>
+    </div>
+  </noscript>
+
+  <script src="js/content.js"></script>
+  <script src="js/sound.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/minigame.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
